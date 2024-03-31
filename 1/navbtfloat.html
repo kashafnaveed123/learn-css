@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    nav{
+        display: inline-block;
+    }
+    .left{
+background-color: aqua;
+position: relative;
+float: left;
+top:-21px;
+left: 0px;
+    }
+    .mid{
+background-color: blue;
+position: relative;
+top: 0px;
+left: 300px;
+margin: -21px;
+}
+    .right{
+background-color: red ;
+position: absolute;
+top:0px;
+right: 0px;
+}
+button{
+cursor: pointer;
+}
+P{
+    letter-spacing: 1rem;
+    /* word-spacing: 1rem; */
+}
+</style>
+<body>
+    <nav>
+        <div class="left">I am left</div>
+        <div class="mid">I am mid</div>
+        <div class="right">I am right</div>
+    </nav>
+    <button>order now</button>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

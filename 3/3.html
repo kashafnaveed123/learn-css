@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width:838px )"  href="838.css">
+    <title>Grid and media queries</title>
+</head>
+<style>
+     :root {
+        --font-size: Verdana;
+        --box-color: rgb(85, 22, 78);
+    }                
+ @media only screen and (min-width:300px) and (max-width:500px) {
+} 
+.box{
+    background-color: var(--box-color);
+}
+#contact-section::before{
+    content: "";
+    position: absolute;
+    background-image: url('./img/interior.jpg') ;
+background-position: cover; 
+    height: 610px;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+    }
+
+</style>
+<body>
+    
+</body>
+</html>

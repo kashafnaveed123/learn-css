@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 2rem;
+        /* grid-template-columns: 1fr 3fr 2fr; */
+        /* grid-template-rows: 1fr 3fr 2fr; */
+        /* for responsive  */
+        /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+        grid-template-areas: 
+        'nav nav nav nav'
+        'section section section aside'
+        'footer footer footer footer'
+        ;
+    }
+
+    .item:first-child {
+        /* grid-column: 1 /span 2 ;
+        grid-row: 1 /span 2   ; */
+    }
+
+    .item {
+        border: 2px solid black;
+        background-color: blue;
+    }
+
+    #nav {
+        grid-area: nav;
+    }
+
+    #section {
+        grid-area: section;
+    }
+
+    #aside {
+        grid-area: aside;
+    }
+</style>
+
+<body>
+    <!-- div.item{this is an item-$}*10 -->
+    <div class="container">
+        <div class="item" id="nav">this is an item-1</div>
+        <div class="item" id="section">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, hic possimus labore odio cupiditate doloribus officia deserunt soluta aliquam dolorem quod, voluptatum sed non
+             quibusdam cumque ipsum corrupti, obcaecati amet temporibus beatae! Temporibus, a.</div>
+        <div class="item" id="aside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perferendis quisquam deleniti assumenda quibusdam quod exercitationem dolor consectetur enim aliquid.</div>
+        <!-- <div class="item">this is an item-4</div>
+    <div class="item">this is an item-5</div>
+    <div class="item">this is an item-6</div>
+    <div class="item">this is an item-7</div>
+    <div class="item">this is an item-8</div>
+    <div class="item">this is an item-9</div>
+    <div class="item">this is an item-10</div> -->
+    </div>
+    <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</footer>
+
+</body>
+
+</html>
